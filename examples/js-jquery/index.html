@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+</head>
+<body>
+    <a href="http://jquery.com/">jQuery</a>
+    <p></p>
+    <script src="jquery-3.7.0.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.0.js" 
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous">
+    </script> -->
+
+    <script>
+
+      // window.onload = function(){
+      //   alert('Welcome!');
+      // }
+
+    window.addEventListener('load', () => {
+      window.onclick = () => document.querySelector('p').innerText = 'Welcome';
+      alert('Alert from arrow function')
+    })
+
+
+
+    
+ 
+    // Your code goes here.
+    // $(document).ready(function(){
+    //   $('a').click(function(){
+    //       $('p').text('Thanks for visit!')
+    //       alert('Thanks for visit!')
+    //       event.preventDefault();
+    //   })
+    // })
+ 
+    </script>
+</body>
+</html>
