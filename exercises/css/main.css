@@ -7,7 +7,6 @@
 }
 
 :root {
-  height: 200vh;
   background-color: #333;
   color: #fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -15,32 +14,46 @@
 }
 
 .header {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 30px;
-}
-.header__header {
-  width: 100vw;
-  display: flex;
-  align-items: center;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr;
+  grid-template-rows: 7fr;
+  background-color: #000;
 }
 .header__logo {
-  width: 80px;
-  height: 80px;
-  aspect-ratio: 1;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 .header__heading {
-  font-weight: normal;
-  font-size: 2.5rem;
+  margin-right: 100px;
   justify-self: center;
+  align-self: center;
+  font-size: 3rem;
+  font-weight: normal;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
+.header__menu {
+  justify-self: center;
+  align-self: center;
 }
 .header__menu-list {
+  list-style: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__menu-item {
+  margin: 0 20px;
+}
+.header__menu-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+.code {
+  margin-top: 100px;
 }/*# sourceMappingURL=main.css.map */
